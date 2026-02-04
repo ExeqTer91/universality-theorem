@@ -1,0 +1,154 @@
+# UNIVERSALITY VALIDATION REPORT
+
+## Hypothesis Under Test
+
+> "Discrete locking shelves (plateaus) emerge generically from dynamical stability 
+> in reversible or near-reversible iterated systems, and collapse under 
+> irreversibility or dephasing, independent of microscopic details."
+
+**Generated:** 2026-02-04T16:47:28.758919
+
+---
+
+## FINAL VERDICT
+
+### ✅ MECHANISM UNIVERSALITY: **SUPPORTED**
+
+**5/6** model classes exhibit the predicted behavior:
+- Discrete shelves in positive controls
+- Collapse under dephasing/dissipation
+- Predicted failure modes confirmed
+
+---
+
+## Summary Statistics
+
+| Model | Class | Control | Shelf Δ | Plateau | σ_crit | Status |
+|-------|-------|---------|---------|---------|--------|--------|
+| Floquet Ising | quantum | positive | 1.792±0.015 | 1.000 | 0.40 | ✅ PASS |
+| Floquet Ising | quantum | dephasing | 0.000±0.000 | 0.663 | 0.00 | ✅ PASS |
+| Floquet Ising | quantum | dissipation | 0.000±0.000 | 0.350 | 0.00 | ✅ PASS |
+| Floquet XXZ | quantum | positive | 2.028±0.030 | 0.984 | 0.40 | ✅ PASS |
+| Floquet XXZ | quantum | dephasing | 0.000±0.000 | 0.584 | 0.00 | ✅ PASS |
+| Floquet XXZ | quantum | dissipation | 0.000±0.000 | 0.280 | 0.00 | ✅ PASS |
+| Kicked Rotor | quantum | positive | 0.477±0.101 | 0.899 | 0.40 | ✅ PASS |
+| Kicked Rotor | quantum | dephasing | 0.000±0.000 | 0.400 | 0.00 | ✅ PASS |
+| Kicked Rotor | quantum | dissipation | 0.000±0.000 | 0.300 | 0.00 | ✅ PASS |
+| Circle Map | classical | positive | 1.000±0.000 | 0.997 | 0.40 | ✅ PASS |
+| Circle Map | classical | dephasing | 0.000±0.000 | 0.300 | 0.00 | ✅ PASS |
+| Circle Map | classical | dissipation | 0.000±0.000 | 0.350 | 0.00 | ✅ PASS |
+| Standard Map | classical | positive | 0.223±0.061 | 0.928 | 0.36 | ✅ PASS |
+| Standard Map | classical | dephasing | 0.000±0.000 | 0.350 | 0.00 | ✅ PASS |
+| Standard Map | classical | dissipation | 0.000±0.000 | 0.450 | 0.00 | ✅ PASS |
+| GL(2,R) Trace | abstract | positive | 0.139±0.000 | 0.964 | 0.60 | ❌ FAIL |
+| GL(2,R) Trace | abstract | dephasing | 0.000±0.000 | 0.300 | 0.00 | ✅ PASS |
+| GL(2,R) Trace | abstract | dissipation | 0.000±0.000 | 0.400 | 0.00 | ✅ PASS |
+
+
+---
+
+## Model-by-Model Analysis
+
+### Floquet Ising
+
+**Class:** quantum
+
+| Metric | Positive | Dephasing | Dissipation |
+|--------|----------|-----------|-------------|
+| shelf_width | 1.792±0.015 | 0.000±0.000 | 0.000±0.000 |
+| plateau_height | 1.000±0.000 | 0.663±0.041 | 0.350±0.043 |
+| sigma_crit | 0.400±0.000 | 0.000±0.000 | 0.000±0.000 |
+
+**Verdict:** ✅ PASS - Shelves detected, collapse under controls
+
+---
+
+### Floquet XXZ
+
+**Class:** quantum
+
+| Metric | Positive | Dephasing | Dissipation |
+|--------|----------|-----------|-------------|
+| shelf_width | 2.028±0.030 | 0.000±0.000 | 0.000±0.000 |
+| plateau_height | 0.984±0.004 | 0.584±0.052 | 0.280±0.034 |
+| sigma_crit | 0.400±0.000 | 0.000±0.000 | 0.000±0.000 |
+
+**Verdict:** ✅ PASS - Shelves detected, collapse under controls
+
+---
+
+### Kicked Rotor
+
+**Class:** quantum
+
+| Metric | Positive | Dephasing | Dissipation |
+|--------|----------|-----------|-------------|
+| shelf_width | 0.477±0.101 | 0.000±0.000 | 0.000±0.000 |
+| plateau_height | 0.899±0.009 | 0.400±0.043 | 0.300±0.034 |
+| sigma_crit | 0.400±0.126 | 0.000±0.000 | 0.000±0.000 |
+
+**Verdict:** ✅ PASS - Shelves detected, collapse under controls
+
+---
+
+### Circle Map
+
+**Class:** classical
+
+| Metric | Positive | Dephasing | Dissipation |
+|--------|----------|-----------|-------------|
+| shelf_width | 1.000±0.000 | 0.000±0.000 | 0.000±0.000 |
+| plateau_height | 0.997±0.003 | 0.300±0.034 | 0.350±0.034 |
+| sigma_crit | 0.400±0.000 | 0.000±0.000 | 0.000±0.000 |
+
+**Verdict:** ✅ PASS - Shelves detected, collapse under controls
+
+---
+
+### Standard Map
+
+**Class:** classical
+
+| Metric | Positive | Dephasing | Dissipation |
+|--------|----------|-----------|-------------|
+| shelf_width | 0.223±0.061 | 0.000±0.000 | 0.000±0.000 |
+| plateau_height | 0.928±0.019 | 0.350±0.034 | 0.450±0.043 |
+| sigma_crit | 0.360±0.080 | 0.000±0.000 | 0.000±0.000 |
+
+**Verdict:** ✅ PASS - Shelves detected, collapse under controls
+
+---
+
+### GL(2,R) Trace
+
+**Class:** abstract
+
+| Metric | Positive | Dephasing | Dissipation |
+|--------|----------|-----------|-------------|
+| shelf_width | 0.139±0.000 | 0.000±0.000 | 0.000±0.000 |
+| plateau_height | 0.964±0.003 | 0.300±0.034 | 0.400±0.043 |
+| sigma_crit | 0.600±0.000 | 0.000±0.000 | 0.000±0.000 |
+
+**Verdict:** ❌ FAIL - Does not exhibit predicted behavior
+
+---
+
+## Methodology
+
+### Universal Metrics
+- **Shelf Width Δ**: Longest contiguous interval where order > 0.8
+- **Plateau Height**: Maximum order parameter value
+- **σ_crit**: Noise level at which shelf structure breaks down
+
+### Pass Criteria
+1. Positive control: Shelf width > 0.2
+2. Negative controls: Shelves collapse (width < 0.2)
+3. Both conditions must be met for model to pass
+
+### Negative Controls
+- **Dephasing**: Destroys coherence/reversibility
+- **Dissipation**: Breaks area preservation / unitarity
+
+---
+
+*Generated by Universal Validation Suite*
