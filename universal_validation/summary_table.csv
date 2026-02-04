@@ -1,0 +1,19 @@
+model,class,control,shelf_width,shelf_std,plateau,plateau_std,sigma_crit,sigma_std,passes
+Floquet Ising,quantum,positive,1.7924,0.0152,1.0000,0.0000,0.4000,0.0000,1
+Floquet Ising,quantum,dephasing,0.0000,0.0000,0.6625,0.0410,0.0000,0.0000,1
+Floquet Ising,quantum,dissipation,0.0000,0.0000,0.3500,0.0425,0.0000,0.0000,1
+Floquet XXZ,quantum,positive,2.0278,0.0304,0.9837,0.0038,0.4000,0.0000,1
+Floquet XXZ,quantum,dephasing,0.0000,0.0000,0.5836,0.0524,0.0000,0.0000,1
+Floquet XXZ,quantum,dissipation,0.0000,0.0000,0.2800,0.0340,0.0000,0.0000,1
+Kicked Rotor,quantum,positive,0.4772,0.1006,0.8994,0.0091,0.4000,0.1265,1
+Kicked Rotor,quantum,dephasing,0.0000,0.0000,0.4000,0.0425,0.0000,0.0000,1
+Kicked Rotor,quantum,dissipation,0.0000,0.0000,0.3000,0.0340,0.0000,0.0000,1
+Circle Map,classical,positive,1.0000,0.0000,0.9967,0.0027,0.4000,0.0000,1
+Circle Map,classical,dephasing,0.0000,0.0000,0.3000,0.0340,0.0000,0.0000,1
+Circle Map,classical,dissipation,0.0000,0.0000,0.3500,0.0340,0.0000,0.0000,1
+Standard Map,classical,positive,0.2228,0.0608,0.9281,0.0194,0.3600,0.0800,1
+Standard Map,classical,dephasing,0.0000,0.0000,0.3500,0.0340,0.0000,0.0000,1
+Standard Map,classical,dissipation,0.0000,0.0000,0.4500,0.0425,0.0000,0.0000,1
+GL(2,R) Trace,abstract,positive,0.1392,0.0000,0.9636,0.0029,0.6000,0.0000,0
+GL(2,R) Trace,abstract,dephasing,0.0000,0.0000,0.3000,0.0340,0.0000,0.0000,1
+GL(2,R) Trace,abstract,dissipation,0.0000,0.0000,0.4000,0.0425,0.0000,0.0000,1
